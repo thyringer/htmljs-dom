@@ -1,8 +1,8 @@
 # HTML.js DOM
 
-*HTML.js DOM* is a minimal JavaScript library containing less than 200 loc that provides functions to significantly reduce the boilerplate code for dynamically creating and manipulating HTML on the client side.
+**HTML.js DOM** is a minimal JavaScript library that provides functions to significantly reduce boilerplate code for dynamically creating and manipulating HTML on the client side.
 
-Unlike React, *HTML.js DOM* does not require complex installation and is significantly more efficient as only a minimal abstraction is placed over the DOM API; more precisely, a builder returning a function for creating a specific nestable HTML element, as well as an additional method to set attributes while returning the element at the same time to pass it on immediately. That's all! And actually sufficient to make working with the DOM API much more convenient without having to resort to fat, slow and unnecessarily complicated frameworks.
+Unlike React, **HTML.js DOM** does not require complex installation and is significantly more efficient, as it only places a minimal abstraction over the DOM API. More precisely, it provides a builder that returns a function for creating a specific nestable HTML element, as well as an additional method to set attributes, returning the element at the same time so it can be passed on immediately. That's all—and actually sufficient to make working with the DOM API much more convenient without resorting to fat, slow, and unnecessarily complicated frameworks.
 
 For all HTML elements, predefined functions are already provided, which have exactly the same name as the HTML elements they create (with the sole exception of "var", which is called "varaibale" instead).
 
@@ -53,9 +53,9 @@ document.body.appendChild(mainContent);
 document.body.appendChild(footerElement);
 ```
 
-Basically, the functions provided do nothing other than create the HTML element they are named after and – if not empty – accept any number of other elements to append as Child, or objects in general that get automatically converted to text using `toString()`; which gives the impression of writing HTML directly in JavaScript. That's the whole magic behind it.
+Basically, the functions provided do nothing other than create the HTML element they are named after and, if not empty, accept any number of other elements to append as children, or objects in general, which get automatically converted to text using toString(). This gives the impression of writing HTML directly in JavaScript. That's the whole magic behind it.
 
-To see how much *HTML.js DOM* can reduce the amount of boilerplate code instead of using React, here is the raw version:
+To see how much **HTML.js DOM** can reduce the amount of boilerplate code instead of using React, here is the raw version:
 
 ```javascript
 // Create the header with a title
