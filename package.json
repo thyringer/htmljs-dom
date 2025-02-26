@@ -1,0 +1,28 @@
+{
+	"name": "htmljs-dom",
+	"version": "1.0.0",
+	"description": "A practical DSL for dynamic HTML generation on the client side.",
+	"main": "htmljs-dom.js",
+	"module": "htmljs-dom.js",
+	"type": "module",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/thyringer/htmljs-dom.git"
+	},
+	"files": [
+		"htmljs-dom.js",
+		"README.md"
+	],
+	"scripts": {
+		
+	},
+	"keywords": [
+		"html",
+		"dsl",
+		"domain-specific",
+		"language",
+		"client"
+	],
+	"author": "Enrico Rippin",
+	"license": "Unlicense"
+}
