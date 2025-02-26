@@ -53,7 +53,7 @@ document.body.appendChild(mainContent);
 document.body.appendChild(footerElement);
 ```
 
-Basically, the functions provided do nothing other than create the HTML element they are named after and – if not empty – accept any number of other elements or objects in general that get automatically converted to text using `toString()`; which gives the impression of writing HTML directly in JavaScript. That's the whole magic behind it.
+Basically, the functions provided do nothing other than create the HTML element they are named after and – if not empty – accept any number of other elements to append as Child, or objects in general that get automatically converted to text using `toString()`; which gives the impression of writing HTML directly in JavaScript. That's the whole magic behind it.
 
 To see how much *HTML.js DOM* can reduce the amount of boilerplate code instead of using React, here is the raw version:
 
@@ -140,7 +140,7 @@ document.body.appendChild(footerElement);
 
 Impressive, isn't it? And all this with less than 200 lines of boring library code and without any syntax extensions like JSX?! This is possible because *HTML.js DOM* does not try to abstract away the DOM API, but just adds a few convenience functions that simply summarize the recurring, same steps. Yes, it can be that simple!
 
-React nonetheless offers more functionality. However, *HTML.js DOM* clearly shows that React is absolutely over-engineered nonsense from Facebook/Meta, which requires a lot of learning time with new models like components to grasp instead of simply writing HTML in vanilla JavaScript.
+React nonetheless offers more functionality. However, *HTML.js DOM* clearly shows that React is absolutely over-engineered nonsense from Facebook/Meta, which requires a lot of learning time with new models like components to grasp instead of simply writing vanilla JavaScript as if it were HTML.
 
 ## Server-side HTML generation
 
