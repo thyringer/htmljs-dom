@@ -148,7 +148,7 @@ React nonetheless offers more functionality. However, **HTML.js DOM** clearly sh
 
 There are several ways to use **HTML.js DOM**.
 
-### Installing via npm from GitHub
+### Installing via npm
 
 Even though **HTML.js DOM** is not available through the official npm registry, the library can still be installed using npm:
 
@@ -173,8 +173,7 @@ The code can also be imported directly as an ES module:
 
 ```js
 <script type="module">
-  import htmljs from 'https://cdn.jsdelivr.net/gh/thyringer/htmljs-dom@v1.0.0/htmljs-dom.js';
-  // Use htmljs as needed
+  import { a, button, p } from 'https://cdn.jsdelivr.net/gh/thyringer/htmljs-dom@v1.0.0/htmljs-dom.js';
 </script>
 ```
 
@@ -183,6 +182,16 @@ If the latest minor version is to be used at all times, the patch number can sim
 ```js
 <script src="https://cdn.jsdelivr.net/gh/thyringer/htmljs-dom@v1.0/htmljs-dom.js"></script>
 ```
+
+### Obtaining via CDN and Storing Locally
+
+As incredibly simple as jsDelivr is, it has two major drawbacks: VS Code's IntelliSense doesn't work for modules imported via CDN. Furthermore, the CDN servers can be down, although this is very rare. Other concerns may exist as well. In any case, this shouldn't be a reason not to benefit from jsDelivr:
+
+```js
+mkdir -p ./client/external && curl -L https://cdn.jsdelivr.net/gh/thyringer/htmljs-dom@v1.0/htmljs-dom.min.js -o ./client/external/htmljs-dom.js
+```
+
+This command creates a local directory for external modules and downloads a minified version of **HTML.js DOM**: If necessary, manually adjust the folder path to your project structure. However, it's important to exclude this folder using `.gitignore`. It's also recommended to save such installation routines in a project-internal shell script for future reproducibility.
 
 ## Server-side HTML generation
 

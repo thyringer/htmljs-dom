@@ -13,9 +13,7 @@
 		"htmljs-dom.js",
 		"README.md"
 	],
-	"scripts": {
-		
-	},
+	"scripts": {},
 	"keywords": [
 		"html",
 		"dsl",
@@ -24,5 +22,8 @@
 		"client"
 	],
 	"author": "Enrico Rippin",
-	"license": "Unlicense"
+	"license": "Unlicense",
+	"devDependencies": {
+		"vite": "^6.2.6"
+	}
 }
