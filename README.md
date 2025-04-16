@@ -146,7 +146,7 @@ React nonetheless offers more functionality. However, **HTML.js DOM** clearly sh
 
 ## Installation Options
 
-There are several ways to install **HTML.js DOM**.
+**HTML.js DOM** can be obtained in several ways.
 
 ### Installing via npm
 
