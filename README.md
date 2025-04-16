@@ -146,13 +146,19 @@ React nonetheless offers more functionality. However, **HTML.js DOM** clearly sh
 
 ## Installation Options
 
-There are several ways to use **HTML.js DOM**.
+There are several ways to install **HTML.js DOM**.
 
 ### Installing via npm
 
-Even though **HTML.js DOM** is not available through the official npm registry, the library can still be installed using npm:
+There is an official npm package:
 
+```bash
+npm install htmljs-dom
 ```
+
+It is also possible to get the library directly from GitHub:
+
+```bash
 npm install git+https://github.com/thyringer/htmljs-dom.git
 ```
 
@@ -169,26 +175,32 @@ A much cleaner and even simpler approach is to use jsDelivr, for which **HTML.js
 ```js
 <script src="https://cdn.jsdelivr.net/gh/thyringer/htmljs-dom@v1.0.0/htmljs-dom.js"></script>
 ```
+
+or alternatively through the official npm repository, which also makes the link more concise:
+
+<script src="https://cdn.jsdelivr.net/npm/htmljs-dom@1.0.0"></script>
+
 The code can also be imported directly as an ES module:
 
 ```js
 <script type="module">
-  import { a, button, p } from 'https://cdn.jsdelivr.net/gh/thyringer/htmljs-dom@v1.0.0/htmljs-dom.js';
+  import { a, button, p } from 'https://cdn.jsdelivr.net/npm/htmljs-dom@1.0.0';
 </script>
 ```
 
 If the latest minor version is to be used at all times, the patch number can simply be omitted:
 
 ```js
-<script src="https://cdn.jsdelivr.net/gh/thyringer/htmljs-dom@v1.0/htmljs-dom.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/htmljs-dom@1.0"></script>
 ```
 
 ### Obtaining via CDN and Storing Locally
 
 As incredibly simple as jsDelivr is, it has two major drawbacks: VS Code's IntelliSense doesn't work for modules imported via CDN. Furthermore, the CDN servers can be down, although this is very rare. Other concerns may exist as well. In any case, this shouldn't be a reason not to benefit from jsDelivr:
 
-```js
-mkdir -p ./client/external && curl -L https://cdn.jsdelivr.net/gh/thyringer/htmljs-dom@v1.0/htmljs-dom.min.js -o ./client/external/htmljs-dom.js
+```bash
+mkdir -p ./client/external
+curl -L https://cdn.jsdelivr.net/npm/htmljs-dom@1.0 -o ./client/external/htmljs-dom.js
 ```
 
 This command creates a local directory for external modules and downloads a minified version of **HTML.js DOM**: If necessary, manually adjust the folder path to your project structure. However, it's important to exclude this folder using `.gitignore`. It's also recommended to save such installation routines in a project-internal shell script for future reproducibility.

@@ -1,7 +1,7 @@
 {
 	"name": "htmljs-dom",
 	"version": "1.0.0",
-	"description": "A practical DSL for dynamic HTML generation on the client side.",
+	"description": "A practical DSL for client-side dynamic HTML generation based on the DOM API as a lightweight alternative to React.",
 	"main": "htmljs-dom.js",
 	"module": "htmljs-dom.js",
 	"type": "module",
